@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+        <meta charset="UTF-8"/>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+        <link rel="stylesheet" type="text/css" href="CSS/table_general.css"/>
+        <script type="text/javascript" src="JS/tableGeneral.js"></script>
+        <title>Tabulae : <%= title %></title>
+    </head>
+<body>
+    <button id="collBut">Collation</button>
+            <div id="formCont">
+                <form id="highForm">
+                    <fieldset id="highSet" class="highLowField">
+                        <legend>Include</legend>
+                        <% wits.forEach((thisWit) => {%> <label for="highBox<%= thisWit %>"><%= thisWit %></label><input id="highBox<%= thisWit %>" type="checkbox" class="highBx" value="<%= thisWit %>"/>  <%})%></fieldset>
+                        <fieldset id="lowSet" class="highLowField">
+                            <legend>Don't include</legend>
+                            <% wits.forEach((thisWit) => {%> <label for="lowBox<%= thisWit %>"><%= thisWit %></label><input id="lowBox<%= thisWit %>" type="checkbox" class="lowBx" value="<%= thisWit %>"/>  <%})%>
+                        </fieldset>
+                </form>
+                <div id="counters">
+                    <div class="countCont">Combinations: <span id="combCount"></span></div>
+                    <div class="countCont">Readings: <span id="rdgCount"></span></div>
+                </div>
+            </div>
+            <div id="leGrandConteneur">
+                <% combinations.forEach((thisArray) => {
+                    if(thisArray.length > 0) {%> <table><% thisArray.forEach((thisCombination) => {%>
+                <tr>
+                    <td class="sigles<% if(thisCombination.seen) {%> seen<%}%>"> 
+                        <button class="siglesBut" type="submit" name="sigles" value="<%=thisCombination.combination%>">
+                            <%=thisCombination.combination%>
+                        </button>
+                    </td>
+                    <td class="nombre">
+                        <%=thisCombination.count%>
+                    </td>
+                </tr>
+                    <%}) %></table> <%}
+                }) %>
+            </div>
+</body>
+</html>

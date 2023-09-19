@@ -1,0 +1,32 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Collatio: <%= title %></title>
+    <link rel="stylesheet" type="text/css" href="CSS/collation.css"/>
+    <%- displayJS ?  '<script type="text/javascript" src="JS/collation.js"></script>' : '<script type="text/javascript" src="JS/collMin.js"></script>'%>
+</head>
+<body>
+    <div id="formContainer">
+        <form id="mainForm" action="/main" method="get">
+            <fieldset id="methodChoice">
+                <label for="root">Root app</label>
+                <input id="root" type="radio" value="root" name="method" <%= root ? 'checked' : '' %>/>
+                <label for="closest">Closest app</label>
+                <input id="closest" type="radio" value="closest" name="method" <%= closest ? 'checked' : '' %>/>
+            </fieldset>
+            <fieldset id="msChoice">
+                <%-form%>
+            </fieldset>
+            <button type="submit" value="submit" id="sbmtBut">Submit</button>
+            
+        </form>
+        <button id="tableBut">Tables</button>
+    
+    </div>
+    <div id="mainTablesContainer">
+        <%-tables%>
+    </div>
+</body>
+</html>

@@ -1,0 +1,115 @@
+#leGrandConteneur {
+    display: flex;
+    flex-flow:row nowrap;
+    align-content: flex-start;
+    justify-content:flex-start;
+    margin-top: 1.5rem;
+    width: fit-content;
+}
+table {height: fit-content;
+border-collapse: collapse;
+margin:1rem}
+td {
+    border: 2px solid #8c5d3a;
+    padding: 0.4rem 0.3rem;
+    text-align: center;
+    width: fit-content;
+    white-space: nowrap;
+    min-width: 1rem;
+}
+
+body{
+    background-color:  #f5e3b5;
+    font-size: 1.04em;
+}
+.sigles {
+    background-color: #d28e5d;
+}
+.nombre {font-weight: bold;
+min-width: 1.5rem;}
+#collBut {
+    position: absolute;
+    left: 2rem;
+    top: 1.5rem;
+    width: fit-content;
+    height: fit-content;
+    padding: 4px 8px;
+    border-style: solid;
+    background-color: #c3a678;
+    border-color: #555555;
+    color: #ffffff;
+    border-radius: 6px;
+    }
+#collBut:hover {
+    background-color: #f5e3b5;
+    cursor: pointer;
+    background-color: #555555;
+    border-color: #555555;
+    color: #ffffff;
+
+}
+.siglesBut {
+    background-color: #a77548;
+    border-style: solid;
+    border-radius: 0.4rem;
+    border-color: #a77548;
+    color: #ffffff;
+    border-width: 2px;
+    padding: 4px 8px;
+    margin: 0rem 0.15rem;
+}
+.siglesBut:hover {
+    border-color: #ffffff;
+    cursor:pointer
+}
+#highForm {
+    border-radius: 20px;
+    padding: 0.7em;
+    border: 10px solid #c66363;
+    background-color: #c66363;
+    color: #000000;
+   
+    width: fit-content;
+    max-width: 80vw;
+    
+    line-height: 2rem;
+    
+}
+input {height: 15px;
+    width: 15px;
+    margin-right: 1rem;
+    margin-left: 0.25rem;
+    }
+#counters {
+    width: fit-content;
+    display: flex;
+    flex-flow: row nowrap;
+    margin-top: 1em;
+    justify-content: space-between;
+    width: fit-content;
+
+}
+.highLowField {
+    border: none;
+    
+}
+#formCont {
+    display: flex;
+    flex-flow: column nowrap;
+    width: fit-content;
+    align-items: flex-end;
+    margin-left: 8rem;
+    margin-top: 1rem;
+}
+.countCont {
+    border: 2px solid #c66363;
+    padding: 0.5rem 0.8rem;
+    background-color: #c66363;
+    color:#000000;
+    border-radius: 0.3rem;
+    width: fit-content;
+    margin-right: 1rem;
+}
+.countCont > span {color: #ffffff}
+
+.seen {background-color: #8e70bd;}

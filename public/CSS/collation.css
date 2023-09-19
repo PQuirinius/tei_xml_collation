@@ -1,0 +1,198 @@
+#lessons tr {
+    border: 2px solid #000000
+}
+tr:nth-child(odd) .main {
+    background-color: #c66363;
+    color: #000000
+}
+tr:nth-child(even) .main {
+    background-color: #d78383;
+    color: #000000
+}
+tr:nth-child(odd) .secondary {
+    background-color: #f5e3b5;
+    color: #333333
+}
+
+tr:nth-child(even) .secondary {
+    background-color: #f8e8c2;
+    color: #333333
+}
+#lessons {
+    width:max-content;
+    display:block;
+    border-collapse: collapse;
+    margin-left: 0.5rem;   
+}
+#lessons thead {
+    display: block;
+    width: 100%;
+    height: fit-content;
+    border-bottom: 2px solid #000000;
+    overflow: auto;
+}
+#lessons tbody {
+    max-height: 90vh;
+    min-height: 20vh;
+    display: block;
+    width: 100%;
+    overflow: scroll;
+    overflow-y: scroll
+}
+#lessons .textContainer {
+    width: 10.5vw;
+    border: 2px solid #000000;
+    padding: 2px 5px;
+}
+#lessons .button {
+    width: 7vw;
+    box-sizing: content-box;
+    padding: 10px
+}
+#manuscripts {
+    width: fit-content;
+    border: 5px solid #000000;
+    border-left-width: 0px;
+    border-bottom-width: 0px;
+    border-collapse: collapse;
+    background-color: #fff;
+    margin-left: 0.5rem;
+}
+#signContainer {
+    width: fit-content; display: flex; flex-flow: row nowrap;
+}
+#signContainer .textContainer {
+    text-align: center;
+    width: 20vw;
+    border: 5px solid #000000;
+    border-top-width: 0px;
+    border-right-width: 0px;
+    font-weight: bold;
+}
+#transcriptionContainer {
+    width: fit-content;
+    display: flex;
+    flex-flow: row nowrap;
+}
+#transcriptionContainer .textContainer {width: 20vw;
+    border: 5px solid #000000;
+    text-align: justify;
+    border-top-width: 0px;
+    border-right-width: 0px
+}
+#manuscripts .textContainer {padding: 6px;
+max-height: 83vh;
+overflow: scroll;
+font-size: 16px;
+}
+.del {text-decoration: line-through;
+}
+.add{font-size: 75%;
+vertical-align: top;
+}
+fieldset {border: none;
+}
+#mainForm {
+margin-left: 3em;
+width: fit-content;
+border-radius: 20px;
+padding: 0.7em;
+border: 10px solid #c66363;
+background-color: #c66363;
+color: #000000;
+margin-bottom: 2em;
+margin-right: 15rem;
+margin-top: 1.5rem;
+}
+body {
+    background-color: #f5e3b5;
+    font-size:18px;
+    margin-left: 0.2vw;
+}
+
+#sbmtBut {margin-left: 15px;
+width: fit-content;
+height: fit-content;
+padding: 4px 8px;
+background-color: #d28e5d ;
+border: 2px solid #a77548;
+color: #ffffff;
+border-radius: 6px;
+margin-top: 0.3em;
+margin-bottom: 0.5em;
+}
+#sbmtBut:hover {background-color: #ff7f50;
+    border-color: #d28e5d;
+cursor: pointer;
+}
+
+tr {background-color: #fff;
+}
+input {height: 15px;
+width: 15px;
+margin-right: 1rem;
+margin-left: 0.25rem;
+}
+
+.readingButton {
+    border: none;
+    padding: 5px;
+    border-radius: 5px;
+    background-color:#7553a3;
+    border: 2px solid #7553a3;
+    color: #ffffff;
+}
+.readingButton:hover {
+    cursor: pointer;
+border-color: #fff;
+}
+td.button {background-color: #8e70bd;
+}
+#backButton {margin-left: 15px;
+    width: fit-content;
+    height: fit-content;
+    padding: 4px 8px;
+    background-color: #c3a678;
+    border-color: #555555;
+    color: #ffffff;
+    border: 2px solid;
+    border-radius: 6px;
+    margin-top: 1em;
+    margin-bottom: 0.5em;
+}
+    
+#backButton:hover, #tableBut:hover {
+    background-color: #f5e3b5;
+    cursor: pointer;
+    background-color: #555555;
+    border-color: #555555;
+    color: #ffffff;
+}
+th {height: 3rem;
+    font-size: 1.2rem;
+}
+#tableBut {
+    position: absolute;
+    right: 2rem;
+    top: 1rem;
+    width: fit-content;
+    height: fit-content;
+    padding: 4px 8px;
+    border-style: solid;
+    background-color: #c3a678;
+    border-color: #555555;
+    color: #ffffff;
+    border-radius: 0.5rem;
+    font-size: 1rem;
+}
+#witChoice {
+    display: flex;
+    flex-flow: row wrap;
+    margin-top:0.4rem;
+    margin-bottom:0.4rem;
+    line-height: 2rem;
+}
+.labInp {
+    white-space: nowrap;
+}
+

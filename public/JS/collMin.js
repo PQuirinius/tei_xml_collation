@@ -1,0 +1,1 @@
+window.onload = function () { document.querySelector("#tableBut").addEventListener("click", toTables) }; function toTables() { window.location.href = "/tables" };
